@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Скидка -50%</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Подключение шрифта -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      background-size: 200% 200%;
+      animation: gradient 6s ease infinite;
+      font-family: 'Rubik', sans-serif;
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin: 5px 0;
+    }
+
+    .block {
+      font-size: 20px;
+      margin: 25px 0;
+      line-height: 1.6;
+    }
+
+    .insta-button {
+      background-color: #3897f0;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(56,151,240,0.25);
+      transition: background 0.3s;
+    }
+
+    .insta-button:hover {
+      background-color: #2a78cc;
+    }
+
+    .verified {
+      margin-top: 35px;
+      font-size: 18px;
+      font-weight: 700;
+      background: rgba(255,255,255,0.12);
+      padding: 12px 24px;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .verified img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #eee;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 БОЛЕЕ 4000 ДОВОЛЬНЫХ КЛИЕНТОВ</h1>
+  <h1>💼 РАБОТАЕМ С 2022 ГОДА</h1>
+
+  <div class="block">
+    🛍️ Успейте купить <b>качественные вещи</b><br>
+    со скидкой до <b>-50%</b> только сегодня!
+  </div>
+
+  <div class="block">
+    💬 Напишите в директ: <b>«пришлите модели по акции»</b><br>
+    и получите доступ к закрытым предложениям 💎
+  </div>
+
+  <a class="insta-button" href="intent://ig.me/m/tymin_min374#Intent;scheme=https;package=com.instagram.android;S.browser_fallback_url=https://ig.me/m/tymin_min374;end;">
+    ✉️ Написать в Instagram
+  </a>
+
+  <div class="verified">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" alt="verified">
+    <span>Магазин проверен Instagram</span>
+  </div>
+
+  <p class="footer-note">
+    📲 Переход откроется в Instagram App на Android. Если не сработает — нажмите кнопку повторно.
+  </p>
+
+</body>
+</html>
